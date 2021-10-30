@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card class="logo py-4 d-flex justify-center">
-      <h1>DOG PARK MAP</h1>
+      <h1>DOG AVOID MAP</h1>
     </v-card>
     <GMap ref="gMap" :zoom="zoom" :center="center" language="en" :options="{fullscreenControl: false}">
       <GMapMarker
@@ -17,6 +17,8 @@
         </GMapInfoWindow>
       </GMapMarker>
       <GMapCircle :options="circleOptions"/>
+      <GMapCircle :options="circleOptions1"/>
+      <GMapCircle :options="circleOptions2"/>
     </GMap>
     <v-dialog
       v-model="dialog"
@@ -153,7 +155,35 @@ export default {
         height: 56,
         textColor: "#fff"
       }
-    ]
+    ],
+    circleOptions: {
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      center: {lat: -27.99569, lng: 153.39767},
+      radius: 300 //
+    },
+    circleOptions1: {
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      center: {lat: -28.00672, lng: 153.37868},
+      radius: 300 //
+    },
+    circleOptions2: {
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      center: {lat: -28.03937,
+          lng: 153.38993},
+      radius: 300 //
+    }
     }
   }
 }

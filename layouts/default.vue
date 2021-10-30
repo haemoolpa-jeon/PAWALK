@@ -40,6 +40,7 @@
           </div>
           <nuxt-link
             v-else
+            @click="login"
             to="/login"
             style="color:white; font-size:1.5rem; text-decoration:none;"
             ><div>Log In</div></nuxt-link
@@ -66,6 +67,7 @@
       <div class="my-2 text-center">
         <v-btn
           v-if="!loggedIn"
+          @click="login"
           color="green"
           nuxt
           to="/login"
@@ -84,6 +86,7 @@
       <div class="mt-2 text-center">
         <v-btn
           v-if="!loggedIn"
+          @click="login"
           color="green"
           nuxt
           to="/register"
@@ -118,7 +121,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      loggedIn: true,
+      loggedIn: false,
       items: [
         {
           icon: 'mdi-apps',
@@ -129,6 +132,11 @@ export default {
           icon: 'mdi-map',
           title: 'DOG PARK MAP',
           to: '/findNearby'
+        },
+        {
+          icon: 'mdi-alert',
+          title: 'AVOID DOGS',
+          to: '/avoid'
         },
         {
           icon: 'mdi-format-list-bulleted-square',
@@ -152,6 +160,9 @@ export default {
       this.loggedIn = false
       alert('Successfully logged out')
       this.$router.push('/')
+    },
+    login() {
+      this.loggedIn = true
     }
   }
 }

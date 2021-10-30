@@ -50,8 +50,7 @@
         { id: 6, title: 'Connor Ryan', src: 'https://picsum.photos/id/200/200/300', job: 'Software Engineer', detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',  rating: 4, flex: 12 },
         { id: 7, title: 'Dendi Navidad', src: 'https://picsum.photos/id/300/200/300', job: 'Graphic Designer', detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', rating: 4, flex: 12 },
         ],
-        park: [],
-        rating: Math.floor((Math.random() * 6 | 0) + 1  )
+        park: []
       }
     },
     async fetch() {

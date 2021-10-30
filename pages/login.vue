@@ -60,6 +60,7 @@ export default {
       this.$router.push('/')
       alert('Successfully logged In')
       console.log(r)
+      this.loggedIn = true
     }
   }
 }

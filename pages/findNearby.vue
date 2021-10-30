@@ -60,6 +60,8 @@ export default {
       zoom: 15,
       address: "",
       currentLocation: {lat:-28.016666, lng: 153.399994},
+      checkbox1: true,
+      checkbox2: true,
       locations: [
         {
           name: "Scenic Dog Park",

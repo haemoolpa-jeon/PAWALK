@@ -35,6 +35,10 @@
             <h2>All of the coding works are our own and have followed some example codes from vuetify official page https://v15.vuetifyjs.com/</h2>
             <h2>All of images are collected from internet from free sources and has been referenced on each image.</h2>
             <h2>Dataset used are collected from Australian Government (data.gov.au) and used data sets are</h2>
+
+            <h2>Map has been implemented by Google Maps with vue/nuxt plugin GMap</h2>
+
+          
             <ul>
               <li><a
               href="https://data.gov.au/dataset/ds-dga-0082553d-d26b-445a-b1c0-b566bc603cdd/details?q=dog%20park%20facility"

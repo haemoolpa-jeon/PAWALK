@@ -160,12 +160,12 @@
                     locale="en-au"
                   ></v-date-picker>
                 </v-menu>
-                <label>Interested Excercise</label>
+                <label>Your Dog types</label>
                 <v-text-field
                   id="InEx"
                   v-model="form2.InEx"
                   :counter="15"
-                  label="Your interests"
+                  label="What types of dogs do you have"
                   type="text"
                   filled
                   style="min-height:96px;"
@@ -201,8 +201,8 @@
                 Registration Complete
               </h2>
 
-              <v-btn to="/leaderboard" color="white" style="width:100%" x-large
-                >Start Using GYMATCH</v-btn
+              <v-btn to="/" color="white" style="width:100%" x-large
+                >Start Using PAWALK</v-btn
               >
             </v-col>
           </v-row>
